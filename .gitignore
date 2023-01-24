@@ -1,0 +1,11 @@
+*.xls
+*.xlsx
+*.csv
+*data*
+*png*
+# *outputs*
+*.DS_Store*
+
+*pycache*
+*ipynb_checkpoints
+*vscode
