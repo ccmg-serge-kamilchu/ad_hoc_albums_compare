@@ -21,8 +21,6 @@ JOIN (
     master_track IS NULL
     )
 
-
-
 ) as b
 ON a.product_id = b.product_id
 WHERE transaction_date BETWEEN '{start_date}' AND '{end_date}'
