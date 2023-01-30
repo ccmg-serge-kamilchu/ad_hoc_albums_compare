@@ -1,5 +1,6 @@
 SELECT 
   b.master_artist,
+  a.sales_country_name,
   b.master_album,
   b.master_track,
   REPLACE(REPLACE(REPLACE(a.sub_account_name , ' - Prime', ''), ' - Unlimited', ''), ' ', '_') as account, 
@@ -24,4 +25,4 @@ JOIN (
 ) as b
 ON a.product_id = b.product_id
 WHERE transaction_date BETWEEN '{start_date}' AND '{end_date}'
-GROUP BY 1, 2, 3, 4, 5, 6, 7, 8
+GROUP BY 1, 2, 3, 4, 5, 6, 7, 8, 9
